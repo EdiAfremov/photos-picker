@@ -10,7 +10,7 @@ export const SerachBarConatiner = styled.div`
   width: 100%;
   min-height: ${(props) => (props.resize ? '50px' : '100%')};
   box-sizing: border-box;
-  padding: 10px 0;
+  padding: 10px 20px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -23,6 +23,9 @@ export const SerachBarConatiner = styled.div`
   flex-basis: 20%;
   div {
     width: 400px;
+    @media (max-width: 768px) {
+      width: 100%;
+    }
     display: flex;
     justify-content: space-between;
   }
